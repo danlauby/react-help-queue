@@ -20,13 +20,18 @@ function TicketList(props) {
       issue: "Donkey picture not displaying on hover in Zoology app. :("
     }
   ];
-  
+
   return (
-    <Ticket
-      location="3A"
-      names="Trent and Dan"
-      issue="Playing with Legos"
-      />
+    <div>
+      <hr/>
+      {masterTicketList.map((ticket, index) =>
+        <Ticket
+          names={ticket.names}
+          location={ticket.location}
+          issue={ticket.issue}
+          key={index}/>
+      )}
+    </div>
   );
 }
 

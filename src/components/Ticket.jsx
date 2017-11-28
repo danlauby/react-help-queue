@@ -3,11 +3,8 @@ import PropTypes from "prop-types";
 
 function Ticket(props) {
   var ticketStyles = {
-    backgroundColor: "rgb(161, 195, 139)",
     fontFamily: "Roboto",
     padding: "10px",
-    border: "1px solid rgb(55, 85, 29)",
-    borderRadius: "10px"
   }
     return(
       <div style={ticketStyles}>
