@@ -15,7 +15,7 @@ const render = (Component) => {
   ReactDOM.render(
     <Provider store={store}>
       <HashRouter>
-        <App/>        
+        <App/>
       </HashRouter>
     </Provider>,
     document.getElementById("react-app-root")
